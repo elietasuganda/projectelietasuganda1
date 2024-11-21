@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Fashion</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="full-screen" id="header">
+        <h1 class="shadow-text">Our Fashion</h1>
+    <nav>
+        <div class="navbar">
+            <ul>
+                <li><a href="/">HOME</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">COLECTION</a></li>
+                <!-- <li><a href="#">CONTACT</a></li> -->
+            </ul>
+        </div>
+    </nav>
+    </header>
+
+    <div class="detail">
+        <h2>About <span> Fashion</span></h2>
+        <p>Fashion is a form of self-expression that involves choices in clothing, accessories, and lifestyle. It’s not just about trends that come and go but also about identity, culture, and how a person presents themselves to the world. Fashion can reflect social status, personality, and even political views. It also constantly evolves over time, influenced by innovation, creators, celebrities, and shifting societal norms. Ultimately, fashion is a blend of art, culture, economics, and individuality. It serves not only as clothing but also as a powerful form of communication in the modern world.
+        </p>
+    </div>
+
+    <!-- <h3>Colection</h3> -->
+    <!-- <div class="wrapper"> -->
+        <!-- <h3>Colection</h3> -->
+        <!-- <div class="wrapper-item1">Dress
+            <img class="article_image" src="./assets/dress.jpg">
+            <p class="asticle_description">Dres...........</p>
+            <a href="#" class="articlle_button">Read More</a>
+        </div>
+        <div class="wrapper-item2">Shoes
+            <img class="article_image" src="./assets/shoes.jpg">
+            <p class="asticle_description">Shoes...........</p>
+            <a href="#" class="articlle_button">Read More</a>
+        </div>
+        <div class="wrapper-item3">Bag
+            <img class="article_image" src="./assets/bag.jpg">
+            <p class="asticle_description">Bags...........</p>
+            <a href="#" class="articlle_button">Read More</a>
+        </div>
+        <div class="wrapper-item4">Jewellery
+            <img class="article_image" src="./assets/jewellery.jpg">
+            <p class="asticle_description">Jewellery...........</p>
+            <a href="#" class="articlle_button">Read More</a>
+        </div>
+        <div class="wrapper-item5">Hijab
+            <img class="article_image" src="./assets/hijab.jpg">
+            <p class="asticle_description">Hijab...........</p>
+            <a href="#" class="articlle_button">Read More</a>
+        </div>
+    </div> -->
+
+    <div class="image-container">
+        <h3>Colection</h3>
+    </div>
+    <div class="image-container1">
+            <h3><span>Dress</span></h3>
+        <img src="./assets/dress.jpg" alt="image" class="image">
+    </div>
+    <div class="image-container2">
+        <h3><span>Shoes</span></h3>
+        <img src="./assets/shoes.jpg" alt="image" class="image">
+    </div>
+    <div class="image-container3">
+        <h3><span>Bag</span></h3>
+        <img src="./assets/bag.jpg" alt="image" class="image">
+    </div>
+    <div class="image-container4">
+        <h3><span>Jewellery</span></h3>
+        <img src="./assets/jewellery.jpg" alt="image" class="image">
+    </div>
+    <div class="image-container5">
+        <h3><span>Hijab</span></h3>
+        <img src="./assets/hijab.jpg" alt="image" class="image">
+    </div>
+
+    <form action="/api/server"></method="post">
+        <p>Purchase and Delivery:</p>
+            <label for="name">Full Name</label><br>
+            <input type="text" name="name" placeholder="Your Full Name" id="name"><br>
+            <label for="email">Email</label><br>
+            <input type="email" name="email" placeholder="Your Email" id="email"><br>
+            <label for="number">Phone Number</label><br>
+            <input type="number" name="number" placeholder="Your Phone Number" id="number"><br>
+            <label for="message">Address</label><br>
+            <textarea id="message" name="message" placeholder="Your Address" cols="20" rows="5" id="message"></textarea><br>
+            <label for="gender">Gender</label><br>
+            <select name="gender" id="gender">
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+            </select><br><br>
+            <label>Select Item</label><br>
+            <input type="checkbox" id="Dress" name="Select Item" value="Dress">
+            <label for="Dress">Dress</label>
+            <input type="checkbox" id="Shoes" name="Select Item" value="Shoes">
+            <label for="Shoes">Shoes</label>
+            <input type="checkbox" id="Bags" name="Select Item" value="Bags">
+            <label for="Bags">Bags</label>
+            <input type="checkbox" id="Jewellery" name="Select Item" value="Jewellery">
+            <label for="Jewellery">Jewellery</label>
+            <input type="checkbox" id="Hijab" name="Select Item" value="Hijab">
+            <label for="Hijab">Hijab</label>
+            <br><br>
+            <label>Payment Method</label><br>
+            <input type="radio" id="Chash" name="Payment Method" value="Chash">
+            <label for="Cash">Cash</label>
+            <input type="radio" id="Transfer" name="Payment Method" value="Transfer">
+            <label for="Transfer">Transfer</label>
+            <input type="radio" id="Qris" name="Payment Method" value="Qris">
+            <label for="Qris">Qris</label>
+            <input type="radio" id="Credit Card" name="Payment Method" value="Credit Card">
+            <label for="Credit Card">Credit Card</label>
+            <br><br>
+            <label>Shipping</label><br>
+            <input type="radio" id="JNE" name="Shipping" value="JNE">
+            <label for="JNE">JNE</label>
+            <input type="radio" id="JNT" name="Shipping" value="JNT">
+            <label for="JNT">JNT</label>
+            <input type="radio" id="Cargo" name="Shipping" value="Cargo">
+            <label for="Cargo">Cargo</label>
+            <br><br>
+            <input type="submit" value="submit">
+    </form>
+
+    <footer class="full-screen" id="footer">
+        <p>2024 My Website</p>
+        <nav>
+            <ul>
+                <li><a href="mailto:example@beauty.com">EMAIL</a></li>
+                <li><a href="phone:+6281234567890">CONTACT US</a></li>
+                <li><a href="#">INSTAGRAM</a></li>
+            </ul>
+        </nav>
+    </footer>
+    
+</body>
+</html>
